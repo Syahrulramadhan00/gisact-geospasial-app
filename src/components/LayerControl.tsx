@@ -16,7 +16,7 @@ export const LayerControl: React.FC = () => {
 
     return (
         <div className="absolute top-4 left-4 z-10 w-64">
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200">
+            <div className="bg-neutral-400/20 backdrop-blur-[2px] border-b border-neutral-400/20 rounded-lg">
                 <div
                     className="flex items-center justify-between p-3 cursor-pointer"
                     onClick={() => setIsOpen(!isOpen)}
