@@ -15,7 +15,7 @@ export const LayerControl: React.FC = () => {
     const isVisible = useAppSelector(state => state.map.isBuildingLayerVisible);
 
     return (
-        <div className="absolute top-4 left-4 z-10 w-64">
+        <div className="absolute lg:top-4 left-4 top-[54%] lg:left-4 z-10 w-1/2 max-w-48">
             <div className="bg-neutral-400/20 backdrop-blur-[2px] border-b border-neutral-400/20 rounded-lg">
                 <div
                     className="flex items-center justify-between p-3 cursor-pointer"

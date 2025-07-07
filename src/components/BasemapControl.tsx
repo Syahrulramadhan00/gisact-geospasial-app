@@ -16,7 +16,7 @@ export const BasemapControl: React.FC = () => {
     const currentStyle = useAppSelector(state => state.map.basemapStyle);
 
     return (
-        <div className="absolute bottom-4 left-4 z-10 w-64">
+        <div className="absolute bottom-4 left-4 z-10 max-w-48 w-1/2">
              <div className="bg-neutral-400/20 backdrop-blur-[2px] border-b border-neutral-400/20 rounded-lg">
                 <div
                     className="flex items-center justify-between p-3 cursor-pointer"
@@ -29,7 +29,7 @@ export const BasemapControl: React.FC = () => {
                     {isOpen ? <ChevronUp className="h-5 w-5 text-gray-600"/> : <ChevronDown className="h-5 w-5 text-gray-600"/>}
                 </div>
                 {isOpen && (
-                     <div className="p-2 border-t border-gray-200 grid grid-cols-3 gap-2">
+                     <div className="p-2 border-t border-gray-200 grid grid-rows-3 gap-2">
                         {basemapStyles.map((style) => (
                             <button
                                 key={style.id}
